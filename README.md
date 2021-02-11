@@ -1,7 +1,10 @@
 Build the project:
 Start the Docker container using the up command, adding the -d flag so it runs in detached mode, and the --build flag to build our initial image. If we did not add this flag, we'd need to open a separate command line tab to execute commands.
+
 1)docker-compose up -d --build
+
 Restoring the data into Docker container
+
 2)docker exec -i newssite_db pg_restore --verbose --clean --no-acl --no-owner -h localhost -U postgres -d NewsSite < ./NewsSite.sql
 
 http://127.0.0.1:8000/admin/ - admin page (login-pass: "admin")

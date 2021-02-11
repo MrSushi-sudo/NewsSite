@@ -29,7 +29,7 @@ venv.bak/
 .idea/**/libraries
 *.iws /out/
 
-
+/.idea
 /.idea/.gitignore
 /.idea/dbnavigator.xml
 /.idea/library.iml
