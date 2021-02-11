@@ -1,0 +1,22 @@
+{% block sidebar %}
+
+<style>
+        .card{
+            box-shadow: 0 16px 48px #E3E7EB;
+        }
+
+</style>
+
+<!-- Sidebar Widgets Column -->
+<div class="col-md-4 float-right ">
+<div class="card my-4">
+        <h5 class="card-header">Создание новости</h5>
+    <div class="card-body">
+        <p class="card-text">Чтобы создать новость нажмите:</p>
+        <a href="{% url 'news_create' %}"
+           class="btn btn-danger">Нажми здесь</a>
+    </div>
+</div>
+</div>
+
+{% endblock sidebar %}
